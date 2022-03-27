@@ -3,7 +3,7 @@ import static java.lang.System.out;
 public class MainTest {
 
     public static void main(String[] args) {
-       KoreanMatcher matcher = new KoreanMatcher();
+        KoreanMatcher matcher = new KoreanMatcher();
 //       matcher.inputMatcherString("거너ㄴ");
 //       out.println(matcher.match("ㄴ거너ㄴㄷ"));
 //       out.println(matcher.match("ㄴ거너ㄷ"));
@@ -37,5 +37,28 @@ public class MainTest {
         out.println(KoreanMatcher.doubleThirdWord('같'));
         out.println(KoreanMatcher.doubleThirdWord('갚'));
         out.println(KoreanMatcher.doubleThirdWord('갛'));
+
+
+        out.println(KoreanMatcher.doubleSecondWord('가'));
+        out.println(KoreanMatcher.doubleSecondWord('개'));
+        out.println(KoreanMatcher.doubleSecondWord('갸'));
+        out.println(KoreanMatcher.doubleSecondWord('걔'));
+        out.println(KoreanMatcher.doubleSecondWord('거'));
+        out.println(KoreanMatcher.doubleSecondWord('게'));
+        out.println(KoreanMatcher.doubleSecondWord('겨'));
+        out.println(KoreanMatcher.doubleSecondWord('계'));
+        out.println(KoreanMatcher.doubleSecondWord('고'));
+        out.println(KoreanMatcher.doubleSecondWord('과'));
+        out.println(KoreanMatcher.doubleSecondWord('괘'));
+        out.println(KoreanMatcher.doubleSecondWord('괴'));
+        out.println(KoreanMatcher.doubleSecondWord('교'));
+        out.println(KoreanMatcher.doubleSecondWord('구'));
+        out.println(KoreanMatcher.doubleSecondWord('궈'));
+        out.println(KoreanMatcher.doubleSecondWord('궤'));
+        out.println(KoreanMatcher.doubleSecondWord('귀'));
+        out.println(KoreanMatcher.doubleSecondWord('규'));
+        out.println(KoreanMatcher.doubleSecondWord('그'));
+        out.println(KoreanMatcher.doubleSecondWord('긔'));
+        out.println(KoreanMatcher.doubleSecondWord('기'));
     }
 }
