@@ -47,4 +47,28 @@ public class KoreanMatcher {
         return word.matches(matcherInputRegex);
     }
 
+    public static String doubleThirdWord(char inputChar) {
+        int inputCharCode = inputChar - koreanFirstWordCode;
+        int inputCharDoubleCode = -1;
+        switch (inputCharCode % koreanSecondRanges % koreanThirdRanges) {
+            case 1: // ㄱ -> ㄲ, ㄳ
+            case 4: // ㄴ -> ㄵ, ㄶ
+                inputCharDoubleCode = inputCharCode + 2;
+                break;
+            case 17: // ㅂ -> ㅄ
+            case 19: // ㅅ -> ㅆ
+                inputCharDoubleCode = inputCharCode + 1;
+                break;
+            case 8: // ㄹ -> ㄺ, ㄻ, ㄼ, ㄽ, ㄾ, ㄿ, ㅀ
+                inputCharDoubleCode = inputCharCode + 7;
+                break;
+
+        }
+        if (inputCharDoubleCode == -1) {
+            return String.valueOf((char) (inputCharCode + koreanFirstWordCode));
+        } else {
+            return "[" + (char) (inputCharCode + koreanFirstWordCode) + "-" + (char) (inputCharDoubleCode + koreanFirstWordCode) + "]";
+        }
+    }
+
 }

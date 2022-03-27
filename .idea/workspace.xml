@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="575e24cf-de1c-4e6b-ad3f-d43c14f3b007" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/KoreanMatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KoreanMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KoreanMatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1648134402003</updated>
-      <workItem from="1648134403078" duration="5837000" />
+      <workItem from="1648134403078" duration="9008000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1648134631544</created>
@@ -73,7 +73,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648134631544</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="한글 basic regex 추가.">
+      <created>1648140506517</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648140506518</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +88,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="git init" />
-    <option name="LAST_COMMIT_MESSAGE" value="git init" />
+    <MESSAGE value="한글 basic regex 추가." />
+    <option name="LAST_COMMIT_MESSAGE" value="한글 basic regex 추가." />
   </component>
 </project>
