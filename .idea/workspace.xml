@@ -63,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1648134402003</updated>
-      <workItem from="1648134403078" duration="14658000" />
+      <workItem from="1648134403078" duration="15890000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1648134631544</created>
@@ -93,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648400566131</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="모음 regex return type fix.">
+      <created>1648483679737</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1648483679737</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +111,7 @@
     <MESSAGE value="한글 basic regex 추가." />
     <MESSAGE value="받침 추가 자음 regex add." />
     <MESSAGE value="모음 regex add." />
-    <option name="LAST_COMMIT_MESSAGE" value="모음 regex add." />
+    <MESSAGE value="모음 regex return type fix." />
+    <option name="LAST_COMMIT_MESSAGE" value="모음 regex return type fix." />
   </component>
 </project>

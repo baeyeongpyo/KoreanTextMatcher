@@ -71,28 +71,36 @@ public class KoreanMatcher {
     }
 
     @SuppressWarnings("DuplicatedCode")
-    public static String doubleThirdWord(char inputChar) {
+    public static char[] doubleThirdWord(char inputChar) {
         int inputCharCode = inputChar - koreanFirstWordCode;
-        int inputCharDoubleCode = -1;
+        int thirdCount = 1;
         switch (inputCharCode % koreanSecondRanges % koreanThirdRanges) {
             case 1: // ㄱ -> ㄲ, ㄳ
             case 4: // ㄴ -> ㄵ, ㄶ
-                inputCharDoubleCode = inputCharCode + 2;
-                break;
+                return new char[]{
+                        inputChar,
+                        (char) (inputChar + thirdCount++),
+                        (char) (inputChar + thirdCount)
+                };
             case 17: // ㅂ -> ㅄ
             case 19: // ㅅ -> ㅆ
-                inputCharDoubleCode = inputCharCode + 1;
-                break;
+                return new char[]{
+                        inputChar,
+                        (char) (inputChar + thirdCount)
+                };
             case 8: // ㄹ -> ㄺ, ㄻ, ㄼ, ㄽ, ㄾ, ㄿ, ㅀ
-                inputCharDoubleCode = inputCharCode + 7;
-                break;
-
+                return new char[]{
+                        inputChar,
+                        (char) (inputChar + thirdCount++), //ㄺ
+                        (char) (inputChar + thirdCount++), //ㄻ
+                        (char) (inputChar + thirdCount++), //ㄼ
+                        (char) (inputChar + thirdCount++), //ㄽ
+                        (char) (inputChar + thirdCount++), //ㄾ
+                        (char) (inputChar + thirdCount++), //ㄿ
+                        (char) (inputChar + thirdCount) //ㅀ
+                };
         }
-        if (inputCharDoubleCode == -1) {
-            return String.valueOf(inputChar);
-        } else {
-            return "[" + inputChar + "-" + (char) (inputCharDoubleCode + koreanFirstWordCode) + "]";
-        }
+        return new char[]{inputChar};
     }
 
 }
