@@ -48,25 +48,26 @@ public class KoreanMatcher {
     }
 
 
-    @SuppressWarnings("DuplicatedCode")
-    public static String doubleSecondWord(char inputChar) {
+    public static char[] doubleSecondWord(char inputChar) {
         int inputCharCode = inputChar - koreanFirstWordCode;
-        int inputCharDoubleCode = -1;
         int inputSecondCode = inputCharCode / koreanThirdRanges;
+        int secondCount = 1;
         switch (inputSecondCode) {
             case 8: // ㅗ -> ㅘ, ㅙ, ㅚ
             case 13: // ㅜ -> ㅝ, ㅞ, ㅟ
-                inputCharDoubleCode = inputCharCode + 3 * koreanThirdRanges;
-                break;
+                return new char[]{
+                        inputChar,
+                        (char) (inputChar + koreanThirdRanges * secondCount++),
+                        (char) (inputChar + koreanThirdRanges * secondCount++),
+                        (char) (inputChar + koreanThirdRanges * secondCount),
+                };
             case 18: // ㅡ -> ㅢ
-                inputCharDoubleCode = inputCharCode + koreanThirdRanges;
-                break;
+                return new char[]{
+                        inputChar,
+                        (char) (inputChar + koreanThirdRanges * secondCount)
+                };
         }
-        if (inputCharDoubleCode == -1) {
-            return "[" + inputChar + "-" + (char) (inputChar + koreanThirdRanges - 1) + "]";
-        } else {
-            return "[" + inputChar + "-" + (char) (inputCharDoubleCode + inputSecondCode + koreanFirstWordCode) + "]";
-        }
+        return new char[]{inputChar};
     }
 
     @SuppressWarnings("DuplicatedCode")

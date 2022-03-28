@@ -4,7 +4,6 @@
     <list default="true" id="575e24cf-de1c-4e6b-ad3f-d43c14f3b007" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/KoreanMatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KoreanMatcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1648134402003</updated>
-      <workItem from="1648134403078" duration="11820000" />
+      <workItem from="1648134403078" duration="14658000" />
     </task>
     <task id="LOCAL-00001" summary="git init">
       <created>1648134631544</created>
@@ -87,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648397871708</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="모음 regex add.">
+      <created>1648400566131</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648400566131</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +103,7 @@
     <MESSAGE value="git init" />
     <MESSAGE value="한글 basic regex 추가." />
     <MESSAGE value="받침 추가 자음 regex add." />
-    <option name="LAST_COMMIT_MESSAGE" value="받침 추가 자음 regex add." />
+    <MESSAGE value="모음 regex add." />
+    <option name="LAST_COMMIT_MESSAGE" value="모음 regex add." />
   </component>
 </project>
