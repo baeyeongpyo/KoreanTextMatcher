@@ -60,5 +60,25 @@ public class MainTest {
         out.println(KoreanMatcher.doubleSecondWord('그'));
         out.println(KoreanMatcher.doubleSecondWord('긔'));
         out.println(KoreanMatcher.doubleSecondWord('기'));
+
+        out.println(KoreanMatcher.firstWord('ㄱ'));
+        out.println(KoreanMatcher.firstWord('ㄲ'));
+        out.println(KoreanMatcher.firstWord('ㄴ'));
+        out.println(KoreanMatcher.firstWord('ㄷ'));
+        out.println(KoreanMatcher.firstWord('ㄸ'));
+        out.println(KoreanMatcher.firstWord('ㄹ'));
+        out.println(KoreanMatcher.firstWord('ㅁ'));
+        out.println(KoreanMatcher.firstWord('ㅂ'));
+        out.println(KoreanMatcher.firstWord('ㅃ'));
+        out.println(KoreanMatcher.firstWord('ㅅ'));
+        out.println(KoreanMatcher.firstWord('ㅆ'));
+        out.println(KoreanMatcher.firstWord('ㅇ'));
+        out.println(KoreanMatcher.firstWord('ㅈ'));
+        out.println(KoreanMatcher.firstWord('ㅉ'));
+        out.println(KoreanMatcher.firstWord('ㅊ'));
+        out.println(KoreanMatcher.firstWord('ㅋ'));
+        out.println(KoreanMatcher.firstWord('ㅌ'));
+        out.println(KoreanMatcher.firstWord('ㅍ'));
+        out.println(KoreanMatcher.firstWord('ㅎ'));
     }
 }

@@ -47,6 +47,72 @@ public class KoreanMatcher {
         return word.matches(matcherInputRegex);
     }
 
+    public static char[] firstWord(char inputChar) {
+        int mappingChar = 0;
+        switch (inputChar) {
+            case 12593:
+                mappingChar = 44032; // ㄱ -> 가
+                break;
+            case 12594:
+                mappingChar = 44620; // ㄲ -> 까
+                break;
+            case 12596:
+                mappingChar = 45208; // ㄴ -> 나
+                break;
+            case 12599:
+                mappingChar = 45796; // ㄷ -> 다
+                break;
+            case 12600:
+                mappingChar = 46384; // ㄸ -> 따
+                break;
+            case 12601:
+                mappingChar = 46972; // ㄹ -> 라
+                break;
+            case 12609:
+                mappingChar = 47560; // ㅁ -> 마
+                break;
+            case 12610:
+                mappingChar = 48148; // ㅂ -> 바
+                break;
+            case 12611:
+                mappingChar = 48736; // ㅃ -> 빠
+                break;
+            case 12613:
+                mappingChar = 49324; // ㅅ -> 사
+                break;
+            case 12614:
+                mappingChar = 49912; // ㅆ -> 싸
+                break;
+            case 12615:
+                mappingChar = 50500; // ㅇ -> 아
+                break;
+            case 12616:
+                mappingChar = 51088; // ㅈ -> 자
+                break;
+            case 12617:
+                mappingChar = 51676; // ㅉ -> 짜
+                break;
+            case 12618:
+                mappingChar = 52264; // ㅊ -> 차
+                break;
+            case 12619:
+                mappingChar = 52852; // ㅋ -> 카
+                break;
+            case 12620:
+                mappingChar = 53440; // ㅌ -> 타
+                break;
+            case 12621:
+                mappingChar = 54028; // ㅍ -> 파
+                break;
+            case 12622:
+                mappingChar = 54616; // ㅎ -> 하
+                break;
+        }
+        return new char[]{
+                (char) (mappingChar),
+                (char) (mappingChar + koreanSecondRanges - 1)
+        };
+    }
 
     public static char[] doubleSecondWord(char inputChar) {
         int inputCharCode = inputChar - koreanFirstWordCode;
